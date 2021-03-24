@@ -1,0 +1,301 @@
+:root {
+    
+    --text-color: #9dffce;
+    
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+main {
+    display:flex;
+    flex-direction: column;
+    
+    align-items:baseline;
+}
+
+#video {
+    object-fit: cover;
+    position: fixed;
+    z-index: -10;
+    top:0;
+    right:0;
+    height: 100%;
+    width: 100%;
+    background-color: dimgrey;
+}
+
+.overlay {
+    position: fixed;
+    z-index:-1;
+    top: 0;
+    left:0;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(78, 78, 78, 0.75);
+}
+
+.hi {
+    position: fixed;
+    font-size: 2.5rem;
+    top: 170px;
+    left: 70px;
+    animation-name: hi-right;
+    animation-duration: 1.5s;
+}
+
+@keyframes hi-right {
+    from {left: -13%;}
+    }
+
+.comma {
+    position: fixed;
+    font-size: 2.5rem;
+    top: 170px;
+    left: 117px;
+    animation-delay: 1.6s;
+    animation-name: comma-right;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+}
+
+@keyframes comma-right {
+    0% {left:-10px;}
+    30% {left:59px; top:170px;}
+    60% {top:182px; left:59px;}
+    90% {left:117px; top:182px;}
+    100% {top:170px}
+}
+
+.namn {
+    position: fixed;
+    font-size: 2.5rem;
+    top: 170px;
+    left: 135px;
+    animation-delay: 3.4s;
+    animation-name: namn-ner;
+    animation-duration: 1.5s;
+}
+
+@keyframes namn-ner {
+    0% {top:-50px; left: 135px;}
+    25% {top:220px; transform: rotate(180deg);}
+    75% {top:170px; transform: rotate(-10deg);}
+    90% {top:170px; left:160px; transform: rotate(7deg);}
+    100% {top:170px; left: 135px}
+}
+
+.presentation {
+   position:fixed;
+   font-size: 2rem;
+   top: 230px;
+   left: 70px;
+   animation-name: pres-op;
+   animation-duration: 0.5s;
+   animation-delay: 5.5s;
+}
+
+@keyframes pres-op {
+from {opacity: 0;}
+}
+
+main ul {
+    font-size: 1.5rem;
+    position: fixed;
+    top: 350px;
+    left: 70px;
+    animation-name: links-op;
+    animation-delay: 7s;
+    animation-duration: 0.5s;
+}
+
+@keyframes links-op {
+    from {opacity:0;}
+}
+
+.greet {
+    font-family: Garamond, Georgia, 'Times New Roman', Times, serif;
+    color:var(--text-color);
+}
+
+
+.link {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.listitem {
+    padding: 0.5em;
+    list-style: none;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+@media (min-width:768px) and (min-height:415px) {
+    .hi {
+        position: fixed;
+        font-size: 3.5rem;
+        top: 170px;
+        left: 170px;
+        animation-name: hi-right;
+        animation-duration: 1.5s;
+    }
+    
+    @keyframes hi-right {
+        from {left: -13%;}
+        }
+    
+    .comma {
+        position: fixed;
+        font-size: 3.5rem;
+        top: 170px;
+        left: 237px;
+        animation-delay: 1.6s;
+        animation-name: comma-right;
+        animation-duration: 1s;
+        animation-timing-function: ease-out;
+    }
+    
+    @keyframes comma-right {
+        0% {left:-10px;}
+        30% {left:154px; top:170px;}
+        60% {top:185px; left:154px;}
+        90% {left:237px; top:185px;}
+        100% {top:170px}
+    }
+    
+    .namn {
+        position: fixed;
+        font-size: 3.5rem;
+        top: 170px;
+        left: 265px;
+        animation-delay: 3.4s;
+        animation-name: namn-ner;
+        animation-duration: 1.5s;
+    }
+    
+    @keyframes namn-ner {
+        0% {top:-50px; left: 265px;}
+        25% {top:220px; transform: rotate(180deg);}
+        75% {top:170px; transform: rotate(-10deg);}
+        90% {top:170px; left:290px; transform: rotate(7deg);}
+        100% {top:170px; left: 265px}
+    }
+    
+    .presentation {
+       position:fixed;
+       padding-top: 2rem;
+       font-size: 3rem;
+       top: 230px;
+       left: 170px;
+       animation-name: pres-op;
+       animation-duration: 0.5s;
+       animation-delay: 5.5s;
+    }
+    
+    @keyframes pres-op {
+    from {opacity: 0;}
+    }
+    
+    main ul {
+        position: fixed;
+        font-size: 2.5rem;
+        top: 450px;
+        left: 170px;
+        animation-name: links-op;
+        animation-delay: 7s;
+        animation-duration: 0.5s;
+    }
+    
+    @keyframes links-op {
+        from {opacity:0;}
+    }
+}
+
+@media (min-width:1440px) {
+    .hi {
+        position: fixed;
+        font-size: 3.5rem;
+        top: 170px;
+        left: 370px;
+        animation-name: hi-right;
+        animation-duration: 1.5s;
+    }
+    
+    @keyframes hi-right {
+        from {left: -13%;}
+        }
+    
+    .comma {
+        position: fixed;
+        font-size: 3.5rem;
+        top: 170px;
+        left: 437px;
+        animation-delay: 1.6s;
+        animation-name: comma-right;
+        animation-duration: 1s;
+        animation-timing-function: ease-out;
+    }
+    
+    @keyframes comma-right {
+        0% {left:-10px;}
+        30% {left:254px; top:170px;}
+        60% {top:185px; left:354px;}
+        90% {left:437px; top:185px;}
+        100% {top:170px}
+    }
+    
+    .namn {
+        position: fixed;
+        font-size: 3.5rem;
+        top: 170px;
+        left: 465px;
+        animation-delay: 3.4s;
+        animation-name: namn-ner;
+        animation-duration: 1.5s;
+    }
+    
+    @keyframes namn-ner {
+        0% {top:-50px; left: 465px;}
+        25% {top:220px; transform: rotate(180deg);}
+        75% {top:170px; transform: rotate(-10deg);}
+        90% {top:170px; left:490px; transform: rotate(7deg);}
+        100% {top:170px; left: 465px}
+    }
+    
+    .presentation {
+       position:fixed;
+       padding-top: 2rem;
+       font-size: 3rem;
+       top: 230px;
+       left: 370px;
+       animation-name: pres-op;
+       animation-duration: 0.5s;
+       animation-delay: 5.5s;
+    }
+    
+    @keyframes pres-op {
+    from {opacity: 0;}
+    }
+    
+    main ul {
+        position: fixed;
+        font-size: 2.5rem;
+        top: 450px;
+        left: 370px;
+        animation-name: links-op;
+        animation-delay: 7s;
+        animation-duration: 0.5s;
+    }
+    
+    @keyframes links-op {
+        from {opacity:0;}
+    }
+}

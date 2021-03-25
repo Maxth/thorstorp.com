@@ -79,7 +79,7 @@ main {
     left: 135px;
     animation-delay: 3.4s;
     animation-name: namn-ner;
-    animation-duration: 1.5s;
+    animation-duration: 2s;
 }
 
 @keyframes namn-ner {
@@ -96,13 +96,34 @@ main {
    top: 230px;
    left: 70px;
    animation-name: pres-op;
-   animation-duration: 0.5s;
-   animation-delay: 5.5s;
+   animation-duration: 1s;
+   animation-delay: 6s;
 }
 
 @keyframes pres-op {
 from {opacity: 0;}
 }
+
+#code {
+    display: inline-block;
+    background: -webkit-linear-gradient(180deg, orange, red);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation-name: code-spin;
+    animation-duration: 3s;
+    animation-delay: 7.1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes code-spin {
+    0% {transform: rotate3d(0);}
+    50% { transform: rotate3d(1, 1 1 180deg);}
+    100% {transform: rotate3d(1, 1, 1, 360deg);}
+}
+
+
 
 main ul {
     font-size: 1.5rem;
@@ -110,7 +131,7 @@ main ul {
     top: 350px;
     left: 70px;
     animation-name: links-op;
-    animation-delay: 7s;
+    animation-delay: 7.5s;
     animation-duration: 0.5s;
 }
 
@@ -178,7 +199,7 @@ main ul {
         left: 265px;
         animation-delay: 3.4s;
         animation-name: namn-ner;
-        animation-duration: 1.5s;
+        animation-duration: 2s;
     }
     
     @keyframes namn-ner {
@@ -196,8 +217,8 @@ main ul {
        top: 230px;
        left: 170px;
        animation-name: pres-op;
-       animation-duration: 0.5s;
-       animation-delay: 5.5s;
+       animation-duration: 1s;
+       animation-delay: 6s;
     }
     
     @keyframes pres-op {
@@ -210,7 +231,7 @@ main ul {
         top: 450px;
         left: 170px;
         animation-name: links-op;
-        animation-delay: 7s;
+        animation-delay: 7.5s;
         animation-duration: 0.5s;
     }
     
@@ -246,7 +267,7 @@ main ul {
     
     @keyframes comma-right {
         0% {left:-10px;}
-        30% {left:254px; top:170px;}
+        30% {left:354px; top:170px;}
         60% {top:185px; left:354px;}
         90% {left:437px; top:185px;}
         100% {top:170px}
@@ -259,7 +280,7 @@ main ul {
         left: 465px;
         animation-delay: 3.4s;
         animation-name: namn-ner;
-        animation-duration: 1.5s;
+        animation-duration: 2s;
     }
     
     @keyframes namn-ner {
@@ -277,8 +298,8 @@ main ul {
        top: 230px;
        left: 370px;
        animation-name: pres-op;
-       animation-duration: 0.5s;
-       animation-delay: 5.5s;
+       animation-duration: 1s;
+       animation-delay: 6s;
     }
     
     @keyframes pres-op {
@@ -291,7 +312,7 @@ main ul {
         top: 450px;
         left: 370px;
         animation-name: links-op;
-        animation-delay: 7s;
+        animation-delay: 7.5s;
         animation-duration: 0.5s;
     }
     

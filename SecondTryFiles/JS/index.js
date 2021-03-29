@@ -8,11 +8,11 @@ arrow =document.querySelector('.arrow');
 document.addEventListener('scroll', (e) => {
 let lastKnownScrollPositionVH = (scrollY/document.documentElement.clientHeight)*100;
 let lastKnownScrollPosition = scrollY;
-console.log(lastKnownScrollPositionVH);
-if (scrollY>0) {
-    arrow.style.visibility = 'hidden';
-} else arrow.style.visibility = 'visible';
+// console.log(lastKnownScrollPositionVH);
+if (lastKnownScrollPositionVH<50) {
+    arrow.style.visibility = 'visible';
+} else arrow.style.visibility = 'hidden';
 
-greetContainer.style.clipPath = `inset(0 ${lastKnownScrollPositionVH}% 0 ${lastKnownScrollPositionVH}%)`;
+greetContainer.style.clipPath = `inset(${lastKnownScrollPositionVH}% 0 ${lastKnownScrollPositionVH}% 0)`;
 
 })

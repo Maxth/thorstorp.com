@@ -1,16 +1,16 @@
 main = document.querySelector('main');
 loading = document.querySelector('#loading');
-greetContainer = document.querySelector('.greet-container');
-introContainer = document.querySelector('.intro-container');
+// greetContainer = document.querySelector('.greet-container');
+// introContainer = document.querySelector('.intro-container');
 
 
 
 //HÄR BÖRJAR LOADING-SCRIPTET, kräver greetContainer, main och loading
 function onReady(callback) {
-  greetContainer.style.display = 'none';
+//   greetContainer.style.display = 'none';
   let intervalId = window.setInterval(function() {
     if (document.getElementsByTagName('body')[0] !== undefined) {
-      greetContainer.style.display = 'block';
+    //   greetContainer.style.display = 'block';
     // introContainer.classList.add('intro-container-anim');
     setTimeout(()=> {
         // introContainer.classList.remove('intro-container-anim');
